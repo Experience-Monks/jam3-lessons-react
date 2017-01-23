@@ -1,6 +1,13 @@
-**Jam3 Lessons - React**
-
-# React.createElement
+---
+layout: lesson
+title: React.createElement
+slug: react-create-element
+references:
+  - title: 'React Top Level API'
+    url: 'https://facebook.github.io/react/'
+  - title: 'Thinking in React'
+    url: 'https://facebook.github.io/react/docs/react-api.html#createelement'
+---
 
 Components are composed by _elements_, other components or a combination of both.
 
@@ -25,8 +32,3 @@ Notice the first argument of this method is the HTML tag name of the element, th
 ```
 
 Since `class` and `for` are reserved words in JavaScript `className` and `htmlFor` are used respectively to avoid parsing errors.
-
-
-### References
-
-- [React Top Level API](https://facebook.github.io/react/docs/react-api.html#createelement)
