@@ -1,6 +1,13 @@
-**Jam3 Lessons - React**
-
-# PropTypes and DefaultProps
+---
+layout: lesson
+title: PropTypes and DefaultProps
+slug: prop-types-default-props
+references:
+  - title: 'List of PropTypes'
+    url: 'https://facebook.github.io/react/docs/typechecking-with-proptypes.html#react.proptypes'
+  - title: 'Default Props'
+    url: 'https://facebook.github.io/react/docs/typechecking-with-proptypes.html#default-prop-values'
+---
 
 ## Prop Types
 
@@ -46,8 +53,3 @@ Lesson.defaultProps = {
   description: 'There is no description for this lesson.'
 }
 ```
-
-### References
-
-- [List of PropTypes](https://facebook.github.io/react/docs/typechecking-with-proptypes.html#react.proptypes)
-- [Default Props](https://facebook.github.io/react/docs/typechecking-with-proptypes.html#default-prop-values)

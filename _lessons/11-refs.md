@@ -1,6 +1,11 @@
-**Jam3 Lessons - React**
-
-# Refs
+---
+layout: lesson
+title: Refs
+slug: refs
+references:
+  - title: 'Refs and the DOM'
+    url: 'https://facebook.github.io/react/docs/refs-and-the-dom.html'
+---
 
 So far, the only way that parent components can trigger changes within their child components is to pass new props. Another way to communicate with child components is through _refs_.
 
@@ -19,8 +24,3 @@ When passed as a _prop_ to a custom component its callback argument would be the
 ```
 
 As a rule of thumb, try to use _props_ before trying to use _refs_, so as to make it clear where the state of a component is owned.
-
-
-### References
-
-- [Refs and the DOM](https://facebook.github.io/react/docs/refs-and-the-dom.html)

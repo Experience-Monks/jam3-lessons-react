@@ -1,6 +1,11 @@
-**Jam3 Lessons - React**
-
-# Rendering an Element into the DOM
+---
+layout: lesson
+title: Rendering an Element into the DOM
+slug: rendering-dom
+references:
+- title: 'Rendering Elements from React official site'
+  url: 'https://facebook.github.io/react/docs/rendering-elements.html'
+---
 
 In order to mount a element to DOM, firstly we need an empty tag in our document:
 
@@ -34,8 +39,3 @@ Everything inside this element will be managed by React DOM.
 
 React compares the DOM with the updated elements and only applies the DOM updates with the necessary changes.
 This is what makes React really fast.
-
-
-### References
-
-- [Rendering Elements from React official site](https://facebook.github.io/react/docs/rendering-elements.html)

@@ -1,0 +1,31 @@
+{% for lesson in site.lessons  %}
+  {% if lesson.title == page.title %}
+    {% unless forloop.first %}
+      {% assign prevurl = prev.url %}
+      {% assign prevtitle = prev.title %}
+    {% endunless %}
+    {% unless forloop.last %}
+      {% assign next = site.lessons[forloop.index] %}
+      {% assign nexturl = next.url %}
+      {% assign nexttitle = next.title %}
+    {% endunless %}
+  {% endif %}
+  {% assign prev = lesson %}
+{% endfor %}
+
+{% if prevurl or nexturl %}
+    <div class="pagination">
+    {% if prevurl %}
+      <div class="pagination__column pagination__column--prev">
+        <h4 class="pagination__label">Previous lesson</h4>
+        <a href="{{ prevurl }}" class="pagination__link">{{ prevtitle }}</a>
+      </div>
+    {% endif %}
+    {% if nexturl %}
+      <div class="pagination__column pagination__column--next">
+        <h4 class="pagination__label">Next lesson</h4>
+        <a href="{{ nexturl }}" class="pagination__link">{{ nexttitle }}</a>
+      </div>
+    {% endif %}
+    </div>
+{% endif %}

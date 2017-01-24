@@ -1,6 +1,11 @@
-**Jam3 Lessons - React**
-
-# Avoid anonymous references
+---
+layout: lesson
+title: Avoid anonymous references
+slug: avoid-anonymous-references
+references:
+  - title: 'Improve control and performance for render functions in React'
+    url: 'https://jeremenichelli.github.io/2016/10/better-control-and-speed-react-render/'
+---
 
 Not only returning React elements, other computational operations like loops can happen inside a render function.
 
@@ -63,7 +68,3 @@ class Movies extends React.Component {
 ```
 
 For the same reason, you should avoid using `bind` inside render.
-
-### References
-
-- [Improve control and performance for render functions in React](https://jeremenichelli.github.io/2016/10/better-control-and-speed-react-render/)
