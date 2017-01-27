@@ -1,0 +1,20 @@
+---
+layout: default
+title: Jam3 React Lessons
+---
+<div class="page__introduction">
+  <h3>Introduction</h3>
+  <p>React is a library to build scalable web applications fully rendered in JavaScript.</p>
+  <p>To accomplish this, it exposes methods and constructors to declare your views by dividing them into reusable and encapsulated parts we are going to call <strong>components</strong> from now on.</p>
+</div>
+
+<div class="lessons">
+  <h3 class="lessons__title">Content</h3>
+  <ol class="lessons__list">
+    {% for lesson in site.lessons %}
+    <li class="lessons__item">
+      <a class="lessons__link" href="{{ lesson.url }}">{{ lesson.title }}</a>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

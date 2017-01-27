@@ -1,6 +1,11 @@
-**Jam3 Lessons - React**
-
-# shouldCompoentnUpdate
+---
+layout: lesson
+title: shouldComponentUpdate
+slug: should-component-update
+references:
+  - title: 'shouldComponentUpdate from React official site'
+    url: 'https://facebook.github.io/react/docs/optimizing-performance.html#shouldcomponentupdate-in-action'
+---
 
 Knowing how our components behave might also unveil when they actually need to be rendered again.
 
@@ -40,7 +45,3 @@ With a simple and straight forward line of code our component gets smarter.
 ## No updates at all
 
 If the component doesn’t contain any dynamic data we can just return `false` inside `shouldComponentUpdate` and it will only get rendered once.
-
-### References
-
-- [shouldComponentUpdate from React official site](https://facebook.github.io/react/docs/optimizing-performance.html#shouldcomponentupdate-in-action)

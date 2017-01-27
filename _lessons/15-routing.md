@@ -1,6 +1,13 @@
-**Jam3 Lessons - React**
-
-# Routing
+---
+layout: lesson
+title: Routing
+slug: routing
+references:
+  - title: 'History API on MDN'
+    url: 'https://developer.mozilla.org/en-US/docs/Web/API/History'
+  - title: 'React Router'
+    url: 'https://github.com/ReactTraining/react-router'
+---
 
 ## General Concepts and Introduction
 
@@ -141,9 +148,3 @@ const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
 ```
 
 Usually `browserHistory` is preferred over `hashHistory`.
-
-
-### References
-
-- [History API on MDN](https://developer.mozilla.org/en-US/docs/Web/API/History)
-- [React Router](https://github.com/ReactTraining/react-router)

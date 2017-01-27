@@ -1,6 +1,8 @@
-**Jam3 Lessons - React**
-
-# Avoid unnecessary element reconciling
+---
+layout: lesson
+title: Avoid unnecessary element reconciling
+slug: constant-elements
+---
 
 Every change on a parent component will trigger a new `React.createElement` call for its children, adding a new reconciling step for each of them as a consequence which makes no sense if we know that our component or part of it will always remain constant.
 

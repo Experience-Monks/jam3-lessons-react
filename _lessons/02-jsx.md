@@ -1,6 +1,13 @@
-**Jam3 Lessons - React**
-
-# JSX
+---
+layout: lesson
+title: JSX
+slug: jsx
+references:
+- title: 'Introducing JSX'
+  url: 'https://facebook.github.io/react/docs/introducing-jsx.html'
+- title: 'JSX In Depth'
+  url: 'https://facebook.github.io/react/docs/jsx-in-depth.html'
+---
 
 First of all, JSX is **neither** a string **nor** HTML but an extension to JavaScript to simplify the nested declaration of React elements.
 
@@ -40,9 +47,3 @@ const langs = ['Hello', 'Hola'];
   { langs[0] }, you!
 </Welcome>
 ```
-
-
-### References
-
-- [Introducing JSX](https://facebook.github.io/react/docs/introducing-jsx.html)
-- [JSX In Depth](https://facebook.github.io/react/docs/jsx-in-depth.html)

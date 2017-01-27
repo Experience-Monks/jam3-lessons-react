@@ -1,6 +1,13 @@
-**Jam3 Lessons - React**
-
-# Components
+---
+layout: lesson
+title: Components
+slug: components
+references:
+  - title: 'Components references'
+    url: 'https://facebook.github.io/react/docs/components-and-props.html'
+  - title: 'Stateless Components'
+    url: 'https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d#.dkm84h7pq'
+---
 
 Components allows you to split UI into small independent and reusable pieces.
 
@@ -15,7 +22,7 @@ function Lesson() {
 ```
 
 
-## Pure (Stateless) Functional Components
+## Stateless Components
 
 This type of components has no _state_, and just shows received _props_. Therefore, it allows a developer to have loosely coupled component, which is more reusable and unit testing friendly.
 
@@ -47,9 +54,3 @@ class Lesson extends React.Component {
 ```
 
 Not mandatory, but it's recommended for class based components to call `super` passing down the received props.
-
-
-### References
-
-- [Components references](https://facebook.github.io/react/docs/components-and-props.html)
-- [Stateless Components](https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d#.dkm84h7pq)

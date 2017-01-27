@@ -1,6 +1,13 @@
-**Jam3 Lessons - React**
-
-# Props
+---
+layout: lesson
+title: Props
+slug: props
+references:
+  - title: 'Components and Props'
+    url: 'https://facebook.github.io/react/docs/components-and-props.html'
+  - title: 'Children in JSX'
+    url: 'https://facebook.github.io/react/docs/jsx-in-depth.html#children-in-jsx'
+---
 
 React uses one-way data flow, data can only be passed from the parent component to the child component using _props_.
 
@@ -57,8 +64,3 @@ Note that:
 ### The `children` prop
 
 The content between the opening and closing tag of a component is passed as a `prop` called `children`, you can access it through `this.props.children`.
-
-### References
-
-- [Components and Props](https://facebook.github.io/react/docs/components-and-props.html)
-- [Children in JSX](https://facebook.github.io/react/docs/jsx-in-depth.html#children-in-jsx)

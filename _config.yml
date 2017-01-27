@@ -1,0 +1,24 @@
+# Site settings
+title: Jam3 Lessons - React
+author: Jam3 Developers
+url: jam3.github.io/jam3-lessons-react
+baseurl: ""
+
+# Build settings
+port: 4000
+exclude: [ "node_modules", "src", "README.md", "*.log", "*.json" ]
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Lessons collection config
+collections:
+  lessons:
+    output: true
+    permalink: /lessons/:title/
