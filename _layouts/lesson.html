@@ -1,26 +1,12 @@
 ---
-layout: default
+subtitle: Jam3 React Lessons
 ---
-<h1>{{ page.title }}</h1>
+{% include header.html %}
 
-<main>
-  {{ page.content }}
-</main>
+  <main class="container">
+    {{ content }}
+  </main>
 
-{% if page.references.size > 0 %}
-  <section class="references">
-    <h3 class="reference__title">References</h3>
-    <ul class="references__list">
-      {% for reference in page.references %}
-        <li class="references__item">
-          <a
-            class="references__link"
-            href="{{ reference.url }}"
-            target="_blank">{{ reference.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-{% endif %}
+  {% include pagination.html %}
 
-{% include pagination.html %}
+{% include footer.html %}

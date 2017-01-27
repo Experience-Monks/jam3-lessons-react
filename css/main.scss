@@ -1,0 +1,179 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import 'normalize';
+@import 'variables';
+
+// GENERAL STYLES
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $colorWhite;
+  color: $colorBlack;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: $colorBlack;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+header,
+main,
+footer,
+.pagination {
+  margin: 0 auto 3em;
+  max-width: 768px;
+  padding: 0 2em;
+}
+
+header {
+  padding-top: 3em;
+}
+
+main {
+  line-height: 1.65;
+  min-height: 30vh;
+}
+
+footer {
+  margin-bottom: 3em;
+  text-align: right;
+}
+
+pre {
+  background-color: $colorBlack;
+  border-radius: 3px;
+  line-height: 1.5;
+  margin: 2rem 0;
+  overflow: scroll;
+  padding: 1rem;
+
+  code {
+    padding: 0;
+  }
+}
+
+code {
+  background-color: $colorBlack;
+  border-radius: 3px;
+  color: $colorWhite;
+  font-family: Menlo, Monospace;
+  font-size: .9em;
+  padding: .1em .35em;
+}
+
+h1.page__title {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.page__introduction {
+  margin: 0 0 3em;
+}
+
+.page__link--home {
+  font-weight: 400;
+  position: relative;
+
+  &:before {
+    content: '\000AB';
+    left: -1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.pagination {
+  display: none;
+  justify-content: space-between;
+}
+
+.pagination__label {
+  font-size: 1em;
+  margin: 0;
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--prev {
+
+    &:before {
+      content: '\000AB';
+      left: -1em;
+    }
+  }
+
+  &--next {
+
+    &:after {
+      content: '\000BB';
+      right: -1em;
+    }
+  }
+}
+
+.pagination__link {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.1;
+  margin: .25em 0 0;
+}
+
+.pagination__column {
+  flex: 1;
+}
+
+.pagination__column--next {
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+
+  h1.page__title {
+    font-size: 2.5em;
+  }
+
+  header,
+  main,
+  footer,
+  .pagination {
+    margin-bottom: 5rem;
+  }
+
+  .pagination {
+    display: flex;
+  }
+}

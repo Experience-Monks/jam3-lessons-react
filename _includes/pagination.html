@@ -14,18 +14,18 @@
 {% endfor %}
 
 {% if prevurl or nexturl %}
-    <div class="pagination">
+    <section class="pagination container">
     {% if prevurl %}
       <div class="pagination__column pagination__column--prev">
-        <h4 class="pagination__label">Previous lesson</h4>
+        <h4 class="pagination__label pagination__label--prev">Previous lesson</h4>
         <a href="{{ prevurl }}" class="pagination__link">{{ prevtitle }}</a>
       </div>
     {% endif %}
     {% if nexturl %}
       <div class="pagination__column pagination__column--next">
-        <h4 class="pagination__label">Next lesson</h4>
+        <h4 class="pagination__label pagination__label--next">Next lesson</h4>
         <a href="{{ nexturl }}" class="pagination__link">{{ nexttitle }}</a>
       </div>
     {% endif %}
-    </div>
+  </section>
 {% endif %}

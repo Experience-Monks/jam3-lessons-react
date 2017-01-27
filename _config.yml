@@ -13,8 +13,9 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-# Blog settings
-# permalink: /:title/
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Lessons collection config
 collections:
