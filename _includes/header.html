@@ -9,6 +9,10 @@
 </head>
 <body class="page">
   <header class="container">
-    {% if page.url != site.baseurl %}<a href="/" class="page__link--home">Back to lessons</a>{% endif %}
+    {% if page.url != "/" %}
+      <a href="{{ site.baseurl | prepend: "/" }}" class="page__link--home">
+        Back to lessons
+      </a>
+    {% endif %}
     <h1 class="page__title">{{ page.title }}</h1>
   </header>
