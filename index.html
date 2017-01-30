@@ -13,7 +13,7 @@ title: Jam3 React Lessons
   <ol class="lessons__list">
     {% for lesson in site.lessons %}
     <li class="lessons__item">
-      <a class="lessons__link" href="{{ lesson.url }}">{{ lesson.title }}</a>
+      <a class="lessons__link" href="{{ lesson.url | prepend: site.baseurl }}">{{ lesson.title }}</a>
     </li>
     {% endfor %}
   </ol>

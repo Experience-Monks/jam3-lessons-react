@@ -2,9 +2,9 @@
 title: Jam3 Lessons - React
 author: Jam3 Developers
 url: jam3.github.io/jam3-lessons-react
-baseurl: ""
 
 # Build settings
+baseurl: /jam3-lessons-react
 port: 4000
 exclude: [ "node_modules", "src", "README.md", "*.log", "*.json" ]
 

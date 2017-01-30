@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ page.title }}{% if page.url != "/" %} - Jam3 React Lessons{% endif %}</title>
-  <link rel="stylesheet" href="/css/main.css">
+  <title>{{ page.title }}{% if page.url != site.baseurl %} - Jam3 React Lessons{% endif %}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 </head>
 <body class="page">
   <header class="container">
-    {% if page.url != "/" %}<a href="/" class="page__link--home">Back to lessons</a>{% endif %}
+    {% if page.url != site.baseurl %}<a href="/" class="page__link--home">Back to lessons</a>{% endif %}
     <h1 class="page__title">{{ page.title }}</h1>
   </header>
