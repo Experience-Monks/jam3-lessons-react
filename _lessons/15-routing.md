@@ -37,7 +37,7 @@ Each of the views, in this case **Home** and **About**, and what will wrap them,
 
 ```jsx
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 import { Router, Route } from 'react-router';
 
 function App() {
@@ -56,7 +56,7 @@ function About() {
   return <h1>About</h1>;
 }
 
-render(
+ReactDOM.render(
   document.getElementById('app'),
   <Router>
     <Route path="/" component={App}>
@@ -75,7 +75,6 @@ Inside the **App** component, the `children` _prop_ acts as a placeholder for th
 ```jsx
 import { Link } from 'react-router';
 
-
 <Link to="/home">Home</Link>
 ```
 
@@ -85,7 +84,7 @@ For example, you can use `activeClassName` to put a class on a Link that is bein
 
 ```jsx
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 import { Link, Router, Route } from 'react-router';
 
 function App() {
@@ -108,7 +107,7 @@ function About() {
   return <h1>About</h1>;
 }
 
-render(
+ReactDOM.render(
   document.getElementById('app'),
   <Router>
     <Route path="/" component={App}>

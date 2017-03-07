@@ -17,6 +17,8 @@ The propTypes typechecking happens after defaultProps are resolved,
 so typechecking will also apply to the defaultProps.
 
 ```jsx
+import React from 'react';
+
 class Lesson extends React.Component {
   constructor(props) {
     super(props);

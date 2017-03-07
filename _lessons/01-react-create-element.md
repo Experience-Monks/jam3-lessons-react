@@ -7,6 +7,8 @@ references:
     url: 'https://facebook.github.io/react/'
   - title: 'Thinking in React'
     url: 'https://facebook.github.io/react/docs/react-api.html#createelement'
+  - title: 'JavaScript modules, module loaders and module bundlers'
+    url: http://jvandemo.com/a-10-minute-primer-to-javascript-modules-module-formats-module-loaders-and-module-bundlers/
 ---
 
 Components are composed by _elements_, other components or a combination of both.
@@ -32,3 +34,5 @@ Notice the first argument of this method is the HTML tag name of the element, th
 ```
 
 Since `class` and `for` are reserved words in JavaScript `className` and `htmlFor` are used respectively to avoid parsing errors.
+
+**Note:** You might have noticed an `import` statement at the beginning of the sample code from above. If you are not familiar with modules and bundlers, you can check out the article in the **References** section here.

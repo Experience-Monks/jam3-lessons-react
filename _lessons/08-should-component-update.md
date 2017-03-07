@@ -12,6 +12,8 @@ Knowing how our components behave might also unveil when they actually need to b
 Given this loading bar component, it’s noticeable that unless its hidden state changes after being mounted, we won’t need to update it.
 
 ```jsx
+import React from 'react';
+
 class LoadingBar extends React.Component {
   render() {
     return (
@@ -26,6 +28,8 @@ class LoadingBar extends React.Component {
 To make our component update cycle smarter we can use `shouldComponentUpdate` and compare the upcoming _props_ and _state_ from the current one.
 
 ```jsx
+import React from 'react';
+
 class LoadingBar extends React.Component {
   shouldComponentUpdate(nextProps, nextStates) {
     return this.props.hidden !== nextProps.hidden;

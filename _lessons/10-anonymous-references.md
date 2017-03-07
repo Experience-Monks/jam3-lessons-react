@@ -12,6 +12,8 @@ Not only returning React elements, other computational operations like loops can
 This power in combination with some short hand allowed from JavaScript itself can become a double-edge sword.
 
 ```jsx
+import React from 'react';
+
 class Movies extends React.Component {
   render() {
     const movies = this.props.movies;
@@ -30,6 +32,8 @@ Remember this render function might get called several times. On every call we a
 Not only these are expensive operations, but they also generate anonymous references on memory making our application slower on each update. Quick solution, create a constant reference with a default value.
 
 ```jsx
+import React from 'react';
+
 const noMovies = [];
 
 class Movies extends React.Component {
@@ -48,6 +52,8 @@ class Movies extends React.Component {
 The same occurs with the arrow function inside map. Though it looks great, it is better to move it outside to avoid new memory allocations on each render.
 
 ```jsx
+import React from 'react';
+
 const noMovies = [];
 
 function renderMovie(movie) {

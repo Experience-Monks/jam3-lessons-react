@@ -40,6 +40,8 @@ const Lesson = (props) => {
 You can also create a new component by extending the `React.Component` class which comes with useful methods to grasp more control while the component is _alive_.
 
 ```jsx
+import React from 'react';
+
 class Lesson extends React.Component {
   constructor(props) {
     super(props);

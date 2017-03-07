@@ -20,6 +20,8 @@ First of all, JSX is **neither** a string **nor** HTML but an extension to JavaS
 The JSX definition you find above become this after being transpiled.
 
 ```js
+import React from 'react';
+
 React.createElement(
   Welcome,
   { size: 'huge' },

@@ -12,6 +12,9 @@ references:
 React uses one-way data flow, data can only be passed from the parent component to the child component using _props_.
 
 ```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 class Welcome extends React.Component {
   render() {
     return <div>Hello, { this.props.name }</div>;
@@ -27,6 +30,9 @@ ReactDOM.render(
 The child-parent communication and sibling communication is more complex and not recommended though it can be achieved by passing methods through _props_ and keeping the content pointing to the parent or the sibling.
 
 ```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 class Button extends React.Component {
   render() {
     return <button onClick={ this.props.handleClick }></button>;

@@ -16,6 +16,8 @@ The states are used to reflect a mutation in a component triggered by itself lik
 We set the initial states in the constructor of the component like this:
 
 ```jsx
+import React from 'react';
+
 class NameForm extends React.Component {
   constructor(props) {
     super(props);

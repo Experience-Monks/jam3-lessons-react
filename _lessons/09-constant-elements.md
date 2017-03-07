@@ -9,6 +9,8 @@ Every change on a parent component will trigger a new `React.createElement` call
 To mitigate this, declare inner components as a constants.
 
 ```jsx
+import React from 'react';
+
 const icon = <Icon/>;
 
 class SearchButton extends React.Component {

@@ -25,6 +25,8 @@ In order to mount a element to DOM, firstly we need an empty tag in our document
 Now we call `ReactDOM.render` and pass an element or a component and the DOM node we will for mounting it:
 
 ```jsx
+import ReactDOM from 'react-dom';
+
 const element = <h1>Hello world</h1>;
 
 ReactDOM.render(
