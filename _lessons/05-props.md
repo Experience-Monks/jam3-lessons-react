@@ -27,7 +27,9 @@ ReactDOM.render(
 );
 ```
 
-The child-parent communication and sibling communication is more complex and not recommended though it can be achieved by passing methods through _props_ and keeping the content pointing to the parent or the sibling.
+The child-parent communication and sibling communication is more complex and not recommended since it breaks the one way data flow paradigm React is intended to work by.
+
+If you need a child-parent communication it can be achieved by passing methods through _props_ and keeping the content pointing to the parent or the sibling.
 
 ```jsx
 import React from 'react';
